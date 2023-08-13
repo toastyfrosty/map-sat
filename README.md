@@ -52,7 +52,9 @@ python3 download_tiles.py --pfile central-belt1000
 
 The image below shows some paired samples from the different datasets as downloaded with the above script.
 
-![datasets image](imgs/datasets.png)
+<p align="center">
+  <img src="imgs/datasets.png" width=50% height=50%>
+</p>
 
 ## ControlEarth training
 We train a ControlNet model using the code provided by the [diffusers library](https://github.com/huggingface/diffusers/tree/main/examples/controlnet).
