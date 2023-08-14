@@ -58,3 +58,9 @@ The image below shows some paired samples from the different datasets as downloa
 
 ## ControlEarth training
 We train a ControlNet model with the built dataset using the code provided by the [diffusers library](https://github.com/huggingface/diffusers/tree/main/examples/controlnet). It is recommended to compile the dataset as a [huggingface dataset](https://huggingface.co/docs/datasets/index).
+
+## Model weights
+
+The best performing model, trained on the Central Belt dataset, is publicly available at https://huggingface.co/tostyfrosty/controlearth.
+
+We also publish the model trained on Mainland Scotland at https://huggingface.co/tostyfrosty/controlearth-sct for comparative purposes.
