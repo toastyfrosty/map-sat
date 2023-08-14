@@ -1,5 +1,5 @@
 # ControlEarth
-Code corresponding to the paper: [ControlEarth: Generate Your Own Scotland](https://link). 
+Code corresponding to the paper: [ControlEarth: Generate Your Own Scotland](https://arxiv.org/). 
 
 > We show that state-of-the-art pretrained diffusion models can be conditioned on cartographic data to generate realistic satellite images. We train the ControlNet model and qualitatively evaluate the results, demonstrating that both image quality and map fidelity are possible.
 
@@ -22,7 +22,7 @@ First, download the shapefile data for scotland. This will generate a folder cal
 ```
 Next, we will split the shapefile into the region of Scotland (merge into single file), and further select only mainland sctoland.
 ```
-python3 create_shapefile_scotland.py
+python create_shapefile_scotland.py
 ```
 
 ### Sample points
@@ -34,7 +34,7 @@ To sample points, we will use the script `generate_points.py`. This file will ac
 
 For instance, to sample 1000 points from the central belt of Scotland, run the following:
 ```
-python3 generate_points.py --npoints 1000 --name central-belt
+python generate_points.py --npoints 1000 --name central-belt
 ```
 This will generate a subfolder in `results/` called `central-belt1000` with the following files:
 - `central-belt1000.html`: a folium dynamic visualisation of the sampled points in an interactive map.
@@ -47,14 +47,14 @@ Lastly, we will download the tiles using the script `download_tiles.py`. This sc
 
 For instance, to download the tiles for the points file `central-belt1000.npy`, run the following (assuming the points file has already been generated):
 ```
-python3 download_tiles.py --pfile central-belt1000
+python download_tiles.py --pfile central-belt1000
 ```
 
 The image below shows some paired samples from the different datasets as downloaded with the above script.
 
-![datasets image](imgs/datasets.png)
+<p align="center">
+  <img src="imgs/datasets.png" width=50% height=50%>
+</p>
 
 ## ControlEarth training
-We train a ControlNet model using the code provided by the [diffusers library](https://github.com/huggingface/diffusers/tree/main/examples/controlnet).
-
-The code used to train the models can be obtained in the following [link]().
+We train a ControlNet model with the built dataset using the code provided by the [diffusers library](https://github.com/huggingface/diffusers/tree/main/examples/controlnet). It is recommended to compile the dataset as a [huggingface dataset](https://huggingface.co/docs/datasets/index).
