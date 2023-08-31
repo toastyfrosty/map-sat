@@ -61,6 +61,6 @@ We train a ControlNet model with the built dataset using the code provided by th
 
 ## Model weights
 
-The best performing model, trained on the Central Belt dataset, is publicly available at https://huggingface.co/tostyfrosty/controlearth.
+The best performing model, trained on the Central Belt dataset, is publicly available at https://huggingface.co/toastyfrosty/controlearth.
 
-We also publish the model trained on Mainland Scotland at https://huggingface.co/tostyfrosty/controlearth-sct for comparative purposes.
+We also publish the model trained on Mainland Scotland at https://huggingface.co/toastyfrosty/controlearth-sct for comparative purposes.
