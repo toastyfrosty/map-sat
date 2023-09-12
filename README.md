@@ -1,4 +1,4 @@
-# ControlEarth
+# Generate Your Own Scotland
 Code corresponding to the paper: _Generate Your Own Scotland: Satellite Image Generation Conditioned on Maps_.
 
 > We show that state-of-the-art pretrained diffusion models can be conditioned on cartographic data to generate realistic satellite images. We train the ControlNet model and qualitatively evaluate the results, demonstrating that both image quality and map fidelity are possible.
